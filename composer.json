@@ -1,0 +1,13 @@
+{
+    "name": "farhanjiratullah/money-record",
+    "description": "API Money Record app",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "farhanjiratullah",
+            "email": "farhanjiratullah794@gmail.com"
+        }
+    ],
+    "require": {}
+}
