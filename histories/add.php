@@ -21,10 +21,12 @@ $incomeOutcomeTodayCheck = "SELECT * FROM histories
                             WHERE user_id = ?
                             AND
                             date = ?
+                            AND
+                            type = ?
                             ";
 
 $stmt = $conn->prepare($incomeOutcomeTodayCheck);
-$stmt->bind_param('is', $user_id, $date);
+$stmt->bind_param('iss', $user_id, $date, $type);
 $stmt->execute();
 $result = $stmt->get_result();
 
