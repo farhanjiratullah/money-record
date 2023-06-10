@@ -92,9 +92,9 @@ if ($result) {
 }
 
 echo json_encode([
-    'succees' => true,
+    'success' => true,
     'message' => 'Successfully fetched income and outcome',
-    'date' => [
+    'data' => [
         'today' => $weekly[6],
         'yesterday' => $weekly[5],
         'week' => $weekly,
