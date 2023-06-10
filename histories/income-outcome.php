@@ -13,7 +13,7 @@ $user_id = $data->user_id;
 $type = $data->type;
 $date = $data->date ?? null;
 
-$histories = "SELECT id, date, total FROM histories
+$histories = "SELECT id, type, date, total FROM histories
             WHERE user_id = ?
             AND
             type = ?
