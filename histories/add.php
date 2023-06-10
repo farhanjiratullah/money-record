@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {
         $stmt->close();
 
         echo json_encode([
-            "success" => false,
+            "success" => true,
             'message' => $type == 'Pemasukan' ? "Successfully created a new income" : "Successfully created a new outcome",
             "data" => null
         ]);
